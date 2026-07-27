@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sehstudents-deployment
+  namespace: sehsit
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: seh-students
+  template:
+    metadata:
+      labels:
+        app: seh-students
+    spec:
+      containers:
+      - name: seh-students
+        image: minaxijoshi/seh-students:0.0.6
+        ports:
+        - containerPort: 3000
