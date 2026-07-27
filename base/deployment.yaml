@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sehstudents-deployment
-  namespace: sehsit
 
 spec:
   replicas: 1
