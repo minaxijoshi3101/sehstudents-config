@@ -6,6 +6,3 @@ resources:
 
 commonLabels: 
   app: seh-students
-
-patches:
-- patch.yaml
