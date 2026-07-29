@@ -5,7 +5,7 @@ resources:
 - ../../base
 
 namePrefix: sit-
-namespace: sehsit
+namespace: sehsitin-argocdui
 
 patches:
 - path: patch.yaml
