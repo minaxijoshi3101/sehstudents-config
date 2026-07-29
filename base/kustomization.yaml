@@ -4,5 +4,5 @@ resources:
 - deployment.yaml 
 - service.yaml
 
-commonLabels: 
+labels: 
   app: seh-students
