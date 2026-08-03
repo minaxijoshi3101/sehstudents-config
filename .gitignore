@@ -1,0 +1,3 @@
+*secret.yaml
+*.dec.yaml
+!*.enc.yaml

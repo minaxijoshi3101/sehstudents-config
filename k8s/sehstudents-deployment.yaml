@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sehstudents-deployment
+  namespace: sehsitin
+  labels:
+    app: seh-students
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: seh-students
+
+  template:
+    metadata:
+      labels:
+        app: seh-students
+
+    spec:
+      containers:
+      - name: seh-students
+        image: minaxijoshi/seh-students:0.0.6
+
+        ports:
+        - containerPort: 3000
+
+        env:
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: sehstudents-db-secret
+              key: DB_USERNAME
+
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sehstudents-db-secret
+              key: DB_PASSWORD
