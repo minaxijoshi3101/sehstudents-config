@@ -1,3 +1,6 @@
 *secret.yaml
 *.dec.yaml
 !*.enc.yaml
+*-dec-*
+*-dec*
+keys.txt
