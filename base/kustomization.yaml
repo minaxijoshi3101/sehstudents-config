@@ -7,3 +7,6 @@ resources:
 labels:
   - pairs:
       app: seh-students
+
+commonAnnotations:
+  version: v1.0.0

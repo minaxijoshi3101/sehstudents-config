@@ -10,4 +10,4 @@ spec:
     targetPort: 3000
   type: ClusterIP
   selector:
-    type: seh-backend
+    app: seh-students

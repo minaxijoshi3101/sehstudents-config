@@ -9,3 +9,7 @@ namespace: sehsitin-argocdui
 
 patches:
 - path: patch.yaml
+
+configMapGenerator:
+- name: sehstudents-config
+  env: config.properties
