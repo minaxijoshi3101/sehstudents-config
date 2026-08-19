@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: seh-students
-        image: minaxijoshi/seh-students:0.0.7
+        image: minaxijoshi/seh-students:0.0.8
         ports:
         - containerPort: 3000
         envFrom:
